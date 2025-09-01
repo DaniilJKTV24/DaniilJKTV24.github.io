@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('Fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+}
+body {
+	background: url("Images/black.jpg");
+}
+.wrapper {
+	width: 1280px;
+	margin: 0px auto;
+/*	background-color: white;*/
+}
+/*-----Header-----*/
+header {
+	box-sizing: border-box;
+	background: linear-gradient(90deg, lightgreen, lightgray, lightskyblue, lightgray, 
+		lightgreen);
+	border: 12px ridge lightyellow;
+	border-radius: 8px;
+	box-shadow: -8px -8px 4px lightpink;
+	margin: 24px;
+}
+h1 {
+	font-family: Oswald;
+	font-size: 72px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 16px;
+	color: darkred;
+	text-shadow: 3px 3px lightblue, 6px 6px darkgreen, 9px 9px 3px yellow;
+	transform: rotate(-15deg);
+	transform-origin: center;
+	padding-top: 60px;
+}
+.header_p_img {
+	display: inline-block;
+	margin: 0px 48px;
+	width: 300px;
+    height: 300px;
+	line-height: 300px;
+    text-align: center;
+    border-radius: 50%;
+    background: radial-gradient(circle, white 90px, blue 110px, lightblue 130px, 
+    	lightseagreen 140px, yellowgreen 150px);
+}
+header img {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 10px solid darkblue;
+	vertical-align: middle;
+}
+.header_p {
+	font-family: Oswald;
+	font-size: 48px;
+	text-align: center;
+	text-shadow: 2px 2px darkred, 4px 4px slategray, 6px 6px 6px hotpink;
+}
+/*-----Header End-----*/
+/*-----Aside-----*/
+aside img {
+	width: 40px;
+	height: auto;
+	position: fixed;
+	bottom: 4px;
+	right: 2px;
+}
+.up_img {
+	bottom: 48px;
+}
+/*-----Aside End-----*/
+/*-----Main-----*/
+.description {
+	box-sizing: border-box;
+	border: 12px solid blueviolet;
+	border-radius: 24px;
+	box-shadow: 16px 16px 4px lightskyblue, -16px -16px 4px lightskyblue;
+	width: 980px;
+	margin: 48px auto;
+	padding: 8px 16px;
+	background: linear-gradient(45deg, rgba(70, 130, 180, 0.5), rgba(251, 252, 146, 0.2), 
+		rgba(188, 143, 143, 0.5));
+	font-size: 24px;
+}
+.list {
+	box-sizing: border-box;
+	border: 12px double darkred;
+	box-shadow: 8px 4px 2px slategray;
+	background: linear-gradient(300deg, rgba(247, 235, 220, 1), rgba(220, 247, 233, 0.8), 
+		rgba(238, 224, 242, 1));
+	margin: 0px 104px 24px;
+}
+main p {
+	font-family: Pacifico;
+	font-size: 20px;
+	word-spacing: 16px;
+	letter-spacing: 2px;
+	text-align: justify;
+	text-indent: 24px;
+	padding: 0px 24px;
+	color: white;
+}
+h2 {
+	font-family: Oswald;
+	font-size: 32px;
+	padding-left: 48px;
+	word-spacing: 8px;
+	background-color: #FAF3FA;
+	border: 12px solid transparent;
+	border-image: linear-gradient(90deg, transparent, #ACECEE) 1;
+	border-radius: 40px 0px 0px 16px/40px 0px 0px 16px;
+	margin: 4px 48px;
+	text-shadow: 2px 2px 4px darkred;
+}
+ul {
+	list-style-type: none;
+	margin: 24px 40px;
+	padding: 4px 16px;
+	box-shadow: -4px -4px 4px 4px lightyellow, 4px 4px 4px 2px orangered, 
+		12px 12px 4px 2px greenyellow;
+	background-color: floralwhite;
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+}
+ul li {
+	font-family: Pacifico;
+	font-size: 20px;
+	word-spacing: 16px;
+	padding-left: 24px;
+	background-image: url(Images/wheel.png);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: left 8px;
+}
+section {
+	overflow: hidden;
+	border: 12px groove rgb(9, 174, 4);
+	border-radius: 32px;
+	box-shadow: 8px 8px 4px #DCFCBA, -8px -8px 4px #DCFCBA;
+	width: 980px;
+/*	margin: 48px auto;*/
+	padding: 8px 16px;
+	background: linear-gradient(135deg, rgba(70, 130, 180, 0.4), rgba(251, 252, 146, 0.2), 
+		rgba(235, 249, 225, 0.2), rgba(188, 143, 143, 0.4));
+}
+.electric {
+	margin: 24px 0px 24px 48px;
+}
+.combustion {
+	margin: 24px 0px 24px 96px;
+}
+.gas {
+	margin: 24px 0px 24px 144px;
+}
+main img {
+	width: 240px;
+	height: 160px;
+	margin: 8px 12px 0px;
+}
+.left_image {
+	float: left;
+	border: 4px dotted darkblue;
+	border-radius: 10px 20px;
+}
+.right_image {
+	float: right;
+	border: 4px dashed darkred;
+	border-radius: 0 50% 50% 50%;
+}
+.butterfly {
+	overflow: hidden;
+	width: 900px;
+	padding: 24px 0px;
+	margin: 4px auto;
+	border: 4px solid deeppink;
+	border-radius: 50%;
+}
+.butterfly_img1 {
+	float: left;
+	margin: 24px 4px 4px 206px;
+	border: 0px solid transparent;
+	border-radius: 0 100%;
+}
+.butterfly_img2 {
+	float: right;
+	margin: 24px 206px 4px 4px;
+	border: 0px solid transparent;
+	border-radius: 100% 0;
+}
+.butterfly_img3 {
+	float: left;
+	margin: 4px 4px 24px 206px;
+	border: 0px solid transparent;
+	border-radius: 100% 0;
+}
+.butterfly_img4 {
+	float: right;
+	margin: 4px 206px 24px 4px;
+	border: 0px solid transparent;
+	border-radius: 0 100%;
+}
+.bottom_pics {
+	width: 988px;
+	margin: 48px auto 0px;
+}
+.bottom_pics img {
+	width: 200px;
+	height: 148px;
+	margin: 0px 20px;
+	rotate: 15deg;
+	border: 2px ridge darkgoldenrod;
+	box-shadow: -4px -4px 2px 2px whitesmoke;
+}
+.bottom_shadows {
+	width: 1068px;
+	margin: 0px auto 48px;
+}
+.bottom_shadows img {
+	width: 200px;
+	height: 148px;
+	margin: 0px 20px;
+	transform: scaleY(-1);
+	rotate: 15deg;
+	border: 2px ridge darkgoldenrod;
+	opacity: .5;
+	filter: blur(1px);
+	mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+/*-----Main End-----*/
+/*-----Footer-----*/
+footer {
+	background-image: url(Images/edited.jpg);
+	height: 88px;
+}
+footer p {
+	display: inline-block;
+	box-sizing: border-box;
+	border-top: 2px outset darkblue;
+	border-bottom: 2px inset darkcyan;
+	box-shadow: 0 0 16px 4px palegoldenrod;
+	width: 284px;
+	padding: 8px;
+	margin: 22px 16px;
+	font-size: 20px;
+	text-align: center;
+	color: darkmagenta;
+	background-color: rgba(255, 255, 255, .5);
+}
+/*-----Footer End-----*/
