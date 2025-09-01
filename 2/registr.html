@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Регистрация</title>
+	<link rel="stylesheet" type="text/css" href="registr.css">
+</head>
+<body>
+<a id="top"></a>
+
+	<div class="wrapper">
+		<header>
+			<h1>Регистрация подписчика</h1>
+		</header>
+		<aside>
+			<nav>
+				<a class="a_left" href="#top">&#8593;</a>
+				<a class="a_right" href="#bottom">&#8595;</a>
+			</nav>
+		</aside>
+		<main>
+			<form>
+				<label>Как вас зовут?</label>
+				<input type="text" name="name"><br>
+				<label>Страна проживания?</label>
+				<input class="input_width" type="text" name="country"><br>
+				<label class="label_display">Ваш адрес электронной</label>
+				<label>почты:</label>
+				<input type="email" name="email"><br>
+				<label>Ваш пол:</label>
+				<input type="radio" name="gender" value="w">Женский
+				<input type="radio" name="gender" value="m">Мужской<br>
+				<label>Укажите возраст</label>
+				<input type="number" name="age" min="16" max="60"><br>
+				<label>Ваш уровень владения компьютером:</label><br>
+				<input type="radio" name="radiochoice" value="1">Начальный<br>
+				<input type="radio" name="radiochoice" value="2">Средний<br>
+				<input type="radio" name="radiochoice" value="3">Профессональный<br>
+				<input type="radio" name="radiochoice" value="4">Не владею<br>
+				<label class="margin_top">Откуда о нас узнали?</label>
+				<select name="choices">
+					<option value="1">-</option>
+					<option value="2">Интернет</option>
+					<option value="3">Печатные издания</option>
+					<option value="4">Посоветовали знакомые</option>
+					<option value="5">Телевидение</option>
+				</select><br>
+				<label class="margin_bottom">Дополнительная информация</label><br>
+				<textarea name="add_info" rows="14" cols="68"></textarea>
+				<label class="margin_top">Дата подписки</label>
+				<input type="date" name="date"><br>
+				
+				<input class="margin_left" type="submit" value="подписаться">
+				<input type="reset" value="очистить">
+			</form>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="index.html">Формы</a></li>
+					<li><a href="ankett.html">Анкета</a></li>
+					<li><a href="sport_registr.html">Соревнования</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+
+<a id="bottom"></a>
+</body>
+</html>

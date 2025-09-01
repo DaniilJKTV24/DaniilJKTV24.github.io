@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Формы</title>
+	<link rel="stylesheet" type="text/css" href="forms.css">
+</head>
+<body>
+<a id="top"></a>
+
+	<div class="wrapper">
+		<header>
+			<p><img src="Images/forms.png" alt="HTML5"></p>
+			<h1>Создание форм в <b>HTML5</b></h1>
+		</header>
+		<aside>
+			<nav>
+				<a class="a_left" href="#top">&#8593;</a>
+				<a class="a_right" href="#bottom">&#8595;</a>
+			</nav>
+		</aside>
+		<main>
+			<div>
+				<h2>Общее описание</h2>
+				<p>HTML формы являются элементами управления, которые применяются для сбора информации от посетителей веб-сайта.</p>
+				<p>Веб-формы состоят из набора текстовых полей, кнопок, списков и других элементов управления, которые активизируются щелчком мыши. Технически формы передают данные от пользователя удаленному серверу. Для получения и обработки данных форм используются языки веб-программирования, такие как PHP, Perl.</p>
+			</div>
+			<div>
+				<h2>Создание формы</h2>
+				<p>Форма начинается с парного тега &lt;form&gt;&lt;/form&gt;. Тег &lt;form&gt; удерживает все элементы управления формы, которые также называются полями. Атрибуты этого элемента содержат информацию, общую для всех полей формы, поэтому в одну форму нужно включать поля, объединенные логически.</p>
+				<p><span class="blue">&lt;form</span> <span class="red">name</span><span class="blue">=</span><span class="green">"form_1"</span> <span class="red">action</span><span class="blue">=</span><span class="green">"script/request.php"</span> <span class="red">method</span><span class="blue">=</span><span class="green">"post"</span><span class="blue">&gt;&lt;/form&gt;</span></p>
+				<ul>
+					<li>Атрибут name. Значение этого атрибута означает имя HTML формы.</li>
+					<li>Атрибут action. Значение этого атрибута отвечает за путь к файлу скрипта, который будет обрабатывать форму. То есть мало ввести данные в форму, их же ведь ещё нужно соответствующим образом обработать, и вот как раз путь к этому файлу-обработчику и находится в значении атрибута action.</li>
+					<li>Атрибут method. У него может быть одно из двух значений: post или get. Этот атрибут определяет способ отправки. Первый способ является скрытой отправкой данных, а второй открытой.</li>
+				</ul>
+			</div>
+			<form name="form_1" action="" method="">
+				<div>
+					<h2>Добавление текстового поля</h2>
+					<p>Добавляется текстовое поле с помощью тега &lt;input&gt;, а точнее с помощью атрибута этого тега type со значением text.</p>
+					<p><span class="blue">&lt;input</span> <span class="red">type</span><span class="blue">=</span><span class="green">"text"</span> <span class="red">name</span><span class="blue">=</span><span class="green">"firstname"</span> <span class="red">value</span><span class="blue">=</span><span class="green">"Введите фамилию"</span><span class="blue">&gt;</span></p>
+					<ul>
+						<li>Атрибут type отвечает за тип элемента ввода. В данном случае, мы указали, что это обычное текстовое поле. В следующих элементах мы будем менять значение этого атрибута.</li>
+						<li>Атрибут name отвечает за имя элемента. Здесь мы указали, что имя данного поля firstname.</li>
+						<li> Атрибут value отвечает за значение этого поля по умолчанию.</li>
+					</ul>
+					<fieldset>
+						<legend>Фамилия</legend>
+						<input type="text" name="firstname" value="Введите фамилию">
+					</fieldset>
+				</div>
+				<div>
+					<h2>Добавление текстового поля для ввода пароля</h2>
+					<p>Однострочное текстовое поле для ввода не обычных символов, а ввода пароля, то есть текст должен быть скрыт звездочками.</p>
+					<p><span class="blue">&lt;input</span> <span class="red">type</span><span class="blue">=</span><span class="green">"password"</span> <span class="red">name</span><span class="blue">=</span><span class="green">"pass"</span> <span class="red">value</span><span class="blue">=</span><span class="green">"Введите пароль"</span><span class="blue">&gt;</span></p>
+					<p>Теперь значением атрибута type является password. Остальные атрибуты те же, что и для обычного текстового поля.</p>
+					<fieldset>
+						<legend>Ввод пароля</legend>
+						<input type="password" name="pass" value="Введите пароль">
+					</fieldset>
+				</div>
+				<div>
+					<h2>Добавление выпадающего списка</h2>
+					<p>Состоит из объявления создания выпадающего списка и добавления элементов списка.</p>
+					<p><span class="blue">&lt;select</span> <span class="red">name</span><span class="blue">=</span><span class="green">"choice"</span><span class="blue">&gt;</span></p>
+					<p class="p_padding"><span class="blue">&lt;option</span> <span class="red">value</span><span class="blue">=</span><span class="green">"1"</span><span class="blue">&gt;</span>Вариант 1<span class="blue">&lt;/option&gt;</span></p>
+					<p class="p_padding"><span class="blue">&lt;option</span> <span class="red">value</span><span class="blue">=</span><span class="green">"2"</span><span class="blue">&gt;</span>Вариант 2<span class="blue">&lt;/option&gt;</span></p>
+					<p class="p_padding"><span class="blue">&lt;option</span> <span class="red">value</span><span class="blue">=</span><span class="green">"3"</span><span class="blue">&gt;</span>Вариант 3<span class="blue">&lt;/option&gt;</span></p>
+					<p><span class="blue">&lt;/select&gt;</span></p>
+					<p>Тег &lt;select&gt; означает начало выпадающего списка. Заканчивается список тегом &lt;/select&gt;. Элементы списка создаются с помощью тега &lt;option&gt;. Значение атрибута value означает, какое значение будет у переменной choice, то есть либо choice = 1, либо choice = 2, либо choice = 3. Сразу после окончания описания тега &lt;option&gt; ставится то, что увидит пользователь в выпадающем списке.</p>
+					<fieldset>
+						<legend>Выбор</legend>
+						<select name="choice">
+							<option value="1">Вариант 1</option>
+							<option value="2">Вариант 2</option>
+							<option value="3">Вариант 3</option>
+						</select>
+					</fieldset>
+				</div>
+				<div>
+					<h2>Добавление текстовой области</h2>
+					<p>Для добавления текстовой области используется тег &lt;textarea&gt;.</p>
+					<p><span class="blue">&lt;textarea</span> <span class="red">name</span><span class="blue">=</span><span class="green">"message"</span> <span class="red">rows</span><span class="blue">=</span><span class="green">"10"</span> <span class="red">cols</span><span class="blue">=</span><span class="green">"45"</span><span class="blue">&gt;</span>Сообщение<span class="blue">&lt;/textarea&gt;</span></p>
+					<p>Создана текстовая область высотой в 10 строк (значение атрибута rows) и шириной в 45 символов (значение атрибута cols). Внутри этого парного тега указывается текст в текстовой области по умолчанию.</p>
+					<fieldset>
+						<textarea name="message" rows="20" cols="90">Сообщение</textarea>
+					</fieldset>
+				</div>
+				<div>
+					<h2>Добавление радиокнопки</h2>
+					<p>Радиокнопка (radio-button) - элемент интерфейса, который позволяет пользователю выбрать один пункт из предопределенного набора (группы). Для создания радиокнопки используется тег &lt;input&gt;.</p>
+					<p>Выберите что-нибудь одно:</p>
+					<p><span class="blue">&lt;input</span> <span class="red">type</span><span class="blue">=</span><span class="green">"radio"</span> <span class="red">name</span><span class="blue">=</span><span class="green">"choiceradio"</span> <span class="red">value</span><span class="blue">=</span><span class="green">"1"</span><span class="blue">&gt;</span>Вариант 1</p>
+					<p><span class="blue">&lt;input</span> <span class="red">type</span><span class="blue">=</span><span class="green">"radio"</span> <span class="red">name</span><span class="blue">=</span><span class="green">"choiceradio"</span> <span class="red">value</span><span class="blue">=</span><span class="green">"2"</span><span class="blue">&gt;</span>Вариант 2</p>
+					<p><span class="blue">&lt;input</span> <span class="red">type</span><span class="blue">=</span><span class="green">"radio"</span> <span class="red">name</span><span class="blue">=</span><span class="green">"choiceradio"</span> <span class="red">value</span><span class="blue">=</span><span class="green">"3"</span><span class="blue">&gt;</span>Вариант 3</p>
+					<ul>
+						<li>Атрибут name отвечает не только за задание имени, но и одна группа радиокнопок должна иметь одно и то же значение атрибута name. Если НЕ сделать одинаковыми имена у этих трёх радиокнопок, то они станут независимыми, а, следовательно, можно будет выбрать сразу несколько вариантов.</li>
+						<li>Атрибут value означает значение переменной choiceradio. Сразу после описания тега &lt;input&gt; идёт текст, который увидит пользователь рядом с соответствующей радиокнопкой.</li>
+						<li>Атрибут value отвечает за значение этого поля по умолчанию.</li>
+					</ul>
+					<fieldset>
+						<legend>Выбор</legend>
+						<p><input type="radio" name="choiceradio" value="1">Вариант 1</p>
+						<p><input type="radio" name="choiceradio" value="1">Вариант 2</p>
+						<p><input type="radio" name="choiceradio" value="1">Вариант 3</p>
+					</fieldset>
+				</div>
+				<div>
+					<h2>Добавление переключателей</h2>
+					<p>Переключатели (checkbox) создаются с помощью тега &lt;input&gt;.</p>
+					<p>Вы согласны с нашими правилами:</p>
+					<p><span class="blue">&lt;input</span> <span class="red">type</span><span class="blue">=</span><span class="green">"checkbox"</span> <span class="red">name</span><span class="blue">=</span><span class="green">"terms"</span> <span class="red">value</span><span class="blue">=</span><span class="green">"yes"</span><span class="blue">&gt;</span></p>
+					<p>Если флажок будет стоять, то значение переменной terms будет yes, если не будет стоять, то значение этой переменной будет "", то есть пустой строкой.</p>
+					<fieldset>
+						<legend>Вы согласны с нашими правилами</legend>
+						<input type="checkbox" name="terms" value="yes">Да<br>
+						<input type="checkbox" name="terms" value="no">Нет<br>
+						<input type="checkbox" name="terms" value="maybe">Возможно<br>
+					</fieldset>
+				</div>
+				<div>
+					<h2>Добавление поля для выбора файла</h2>
+					<p>При загрузке файла на сервер, часто приходится использовать поле вставки имени файла, которое создается с помощью тега &lt;input&gt;.</p>
+					<p>Выберите файл для загрузки:</p>
+					<p><span class="blue">&lt;input</span> <span class="red">type</span><span class="blue">=</span><span class="green">"file"</span> <span class="red">name</span><span class="blue">=</span><span class="green">"path"</span><span class="blue">&gt;</span></p>
+					<fieldset>
+						<legend>Выберите файл</legend>
+						<input type="file" name="path">
+					</fieldset>
+				</div>
+				<div>
+					<h2>Кнопки</h2>
+					<ol>
+						<li>Обычная кнопка</li>
+					</ol>
+					<p>Создается кнопка, которая сама по себе не совершает никаких действий и не отправляет форму на сервер. Это многофункциональная кнопка, управляемая JavaScript (обычно через событие click).</p>
+					<p><span class="blue">&lt;input</span> <span class="red">type</span><span class="blue">=</span><span class="green">"button"</span> <span class="red">name</span><span class="blue">=</span><span class="green">"start"</span> <span class="red">value</span><span class="blue">=</span><span class="green">"Начать"</span><span class="blue">&gt;</span></p>
+					<p>Значение атрибута type - button, сообщает браузеру, что это кнопка.<br>Атрибут name - это имя кнопки.<br>Значение атрибута value отвечает за текст на кнопке.</p>
+					<fieldset>
+						<legend>Обычная кнопка</legend>
+						<input type="button" name="start" value="Начать">
+					</fieldset>
+				</div>
+				<div>
+					<h2>Кнопки</h2>
+					<ol start="2">
+						<li>Kнопка submit</li>
+					</ol>
+					<p>Kнопка submit, при нажатии на которую форма отправляется на обработку к файлу, указанному в атрибуте action тега &lt;form&gt;.</p>
+					<p><span class="blue">&lt;input</span> <span class="red">type</span><span class="blue">=</span><span class="green">"submit"</span> <span class="red">value</span><span class="blue">=</span><span class="green">"Отправить"</span><span class="blue">&gt;</span></p>
+					<fieldset>
+						<legend>Kнопка submit</legend>
+						<input type="submit" value="Отправить">
+					</fieldset>
+				</div>
+				<div>
+					<h2>Кнопки</h2>
+					<ol start="3">
+						<li>Kнопка Reset</li>
+					</ol>
+					<p>Создается кнопка для очистки формы.</p>
+					<p><span class="blue">&lt;input</span> <span class="red">type</span><span class="blue">=</span><span class="green">"reset"</span> <span class="red">value</span><span class="blue">=</span><span class="green">"Очистить"</span><span class="blue">&gt;</span></p>
+					<fieldset>
+						<legend>Kнопка Reset</legend>
+						<input type="reset" name="Очистить">
+					</fieldset>
+				</div>
+				<div>
+					<h2>Кнопки</h2>
+					<ol start="4">
+						<li>Kнопка Submit в виде изображения</li>
+					</ol>
+					<p>Загружает изображение, которое используется вместо кнопки Submit. Для работы тег &lt;input&gt; должен содержать также атрибут src, указывающий путь к изображению.</p>
+					<p><span class="blue">&lt;input</span> <span class="red">type</span><span class="blue">=</span><span class="green">"image"</span> <span class="red">src</span><span class="blue">=</span><span class="green">"button_otpravit.jpg"</span><span class="blue">&gt;</span></p>
+					<fieldset>
+						<legend>Kнопка Submit в виде изображения</legend>
+						<input class="input_img" type="image" src="Images/button.png">
+					</fieldset>
+				</div>
+			</form>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="ankett.html">Анкета</a></li>
+					<li><a href="registr.html">Регистрация</a></li>
+					<li><a href="sport_registr.html">Соревнования</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+
+<a id="bottom"></a>
+</body>
+</html>

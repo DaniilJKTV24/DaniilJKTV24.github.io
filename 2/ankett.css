@@ -1,0 +1,140 @@
+.wrapper {
+	width: 1280px;
+	margin: 0px auto;
+	background: url('Images/background.jpg');
+}
+/*-----Header-----*/
+header {
+	font-family: cursive;
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: center;
+	background: linear-gradient(white, green, white, red, white);
+	background-clip: text;
+	color: transparent;
+	box-shadow: 4px 4px 6px darkblue;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+/*-----Header End-----*/
+/*-----Aside-----*/
+aside {
+	position: fixed;
+	top: 40px;
+	width: 1272px;
+	margin: 0px 4px;
+}
+aside a {
+	font-size: 48px;
+	color: darkred;
+}
+.a_left {
+	float: left;
+}
+.a_right {
+	float: right;
+}
+/*-----Aside End-----*/
+/*-----Main-----*/
+.section {
+	width: 1200px;
+	margin: 16px auto;
+	border: 2px dotted darkblue;
+}
+h2 {
+	font-family: cursive;
+	font-size: 32px;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 2px 2px 2px white;
+}
+fieldset {
+	border: 4px double indianred;
+	margin: 0px 50px 25px;
+	padding: 30px 30px;
+}
+legend {
+	font-size: 28px;
+	margin-left: 50px;
+	padding: 5px 15px;
+	border: 2px solid darkblue;
+	border-radius: 5px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+label, input {
+	display: inline-block;
+	margin: 10px 0px;
+}
+label {
+	width: 75px;
+	padding-left: 75px;
+}
+input, select {
+	font-size: 16px;
+}
+b {
+	font-size: 20px;
+	text-shadow: 2px 2px 2px white;
+}
+.width_1 {
+	width: 600px;
+	margin: 0px 75px;
+}
+.label_1 {
+	width: auto;
+	margin-right: 5px;
+}
+.input_1 {
+	margin: 0px 10px;
+}
+.input_2 {
+	border-radius: 10px;
+	width: 120px;
+}
+.color_width {
+	width: 90px;
+}
+textarea {
+	margin: 10px 0px 30px 75px;
+	border: 2px ridge sandybrown;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px darkred;
+	font-size: 18px;
+}
+.datetime {
+	width: 260px;
+	border-radius: 5px;
+}
+.margin_1 {
+	margin-left: 85px;
+	margin-right: 10px;
+}
+.margin_2 {
+	margin-left: 75px;
+	margin-top: 0px;
+	width: 125px;
+}
+.date {
+	width: 140px;
+	border-radius: 5px;
+}
+.left_margin {
+	margin-left: 500px;
+	margin-bottom: 50px;
+}
+/*-----Main End-----*/
+/*-----Footer-----*/
+footer {
+	margin: 8px 48px;
+	border: 2px dashed black;
+}
+footer li {
+	display: inline-block;
+	width: 360px;
+	text-align: center;
+}
+footer a {
+	font-size: 24px;
+	color: black;
+}
+/*-----Footer End-----*/

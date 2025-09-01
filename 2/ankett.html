@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Анкета</title>
+	<link rel="stylesheet" type="text/css" href="ankett.css">
+</head>
+<body>
+<a id="top"></a>
+
+	<div class="wrapper">
+		<header>
+			<h1>Ресторан "Три корочки"</h1>
+		</header>
+		<aside>
+			<nav>
+				<a class="a_left" href="#top">&#8593;</a>
+				<a class="a_right" href="#bottom">&#8595;</a>
+			</nav>
+		</aside>
+		<main>
+			<form>
+				<section class="section">
+					<h2>Анкета посетителя ресторана</h2>
+					<fieldset>
+						<legend>Контактные данные</legend>
+						<label><b>Имя</b></label>
+						<input class="width_1" type="text" name="firstname" value="Введите имя">
+						<label><b>Фамилия</b></label>
+						<input class="width_1" type="text" name="surname" value="Введите фамилию">
+						<label><b>E-mail</b></label>
+						<input class="width_1" type="email" name="email" value="Введите адрес электронной почты">
+						<label><b>Телефон</b></label>
+						<input class="width_1" type="tel" name="telephone" value="Введите номер мобильного телефона">
+					</fieldset>
+					<fieldset>
+						<legend>Персональная информация</legend>
+						<label class="label_1"><b>Ваш пол:</b></label>
+						<input class="input_1" type="radio" name="gender" value="1"><b>Женский</b>
+						<input class="input_1" type="radio" name="gender" value="2"><b>Мужской</b><br>
+						<label class="label_1"><b>Возраст:</b></label>
+						<input class="input_2" type="text" name="age"><br>
+						<label class="label_1"><b>Ваш любимый цвет?</b></label>
+						<input class="color_width" type="color"><br>
+					    <label class="label_1"><b>Ваша любимая кухня?</b></label>
+					    <select name="kitchenSelect">
+				    		<option value="" disabled selected>Выберите из списка</option>
+				    		<option>Азиатская кухня</option>
+				    		<option>Американская кухня</option>
+				    		<option>Армянская кухня</option>
+				    		<option>Белорусская кухня</option>
+				    		<option>Греческая кухня</option>
+				    		<option>Грузинская кухня</option>
+				    		<option>Европейская кухня</option>
+				    		<option>Индийская кухня</option>
+				    		<option>Итальянская кухня</option>
+				    		<option>Кавказская кухня</option>
+				    		<option>Мексиканская кухня</option>
+				    		<option>Немецкая кухня</option>
+				    		<option>Русская кухня</option>
+					    </select><br>
+					    <label class="label_1"><b>Какие блюда вы бы хотели видеть в меню?</b></label><br>
+					    <textarea name="message" rows="10" cols="70">Напишите свои предложения</textarea>
+					</fieldset>
+					<fieldset>
+						<legend>Оценка нашего заведения</legend>
+						<label class="label_1"><b>Дата и время посещения</b></label>
+						<input class="datetime" type="datetime-local" name="local_datetime"><br>
+						<label class="label_1"><b>Почему вы выбрали наше заведение?</b></label><br>
+						<input class="margin_1" type="radio" name="reason" value="1"><b>Недалеко от дома</b><br>
+						<input class="margin_1" type="radio" name="reason" value="2"><b>Увидел рекламу</b><br>
+						<input class="margin_1" type="radio" name="reason" value="3"><b>Посоветовали</b><br>
+						<input class="margin_1" type="radio" name="reason" value="4"><b>Соотношение цены и качества</b><br>
+						<label class="label_1"><b>Как вы оцениваете наше заведение? (по 5-ти бальной системе)</b></label><br>
+						<input class="margin_2" type="range" name="evaluation"><br>
+						<label class="label_1"><b>Вы будете рекомендовать наше заведение своим знакомым?</b></label><br>
+						<input class="margin_1" type="radio" name="choice" value="yes"><b>Да</b><br>
+						<input class="margin_1" type="radio" name="choice" value="no"><b>Нет</b>
+					</fieldset>	
+					<fieldset>
+						<legend>Дата заполнения анкеты</legend>
+						<label class="label_1"><b>Выберите дату</b></label>
+						<input class="date" type="date" name="date">
+					</fieldset>
+					<input class="left_margin" type="submit" value="Отправить">
+					<input type="reset" value="Очистить">
+				</section>
+			</form>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="index.html">Формы</a></li>
+					<li><a href="registr.html">Регистрация</a></li>
+					<li><a href="sport_registr.html">Соревнования</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+
+<a id="bottom"></a>
+</body>
+</html>

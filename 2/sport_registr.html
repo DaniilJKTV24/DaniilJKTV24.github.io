@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Регистрация на спортивные соревнования</title>
+	<link rel="stylesheet" type="text/css" href="running.css">
+</head>
+<body>
+<a id="top"></a>
+
+	<div class="wrapper">
+		<header>
+			<h1>Регистрация на спортивные соревнования по беговым видам легкой атлетики</h1>
+		</header>
+		<aside>
+			<nav>
+				<a class="a_left" href="#top">&#8593;</a>
+				<a class="a_right" href="#bottom">&#8595;</a>
+			</nav>
+		</aside>
+		<main>
+			<form>
+				<fieldset class="fieldset_1">
+					<legend>Выбор соревнования и даты</legend>
+					<input type="radio" name="radiochoice" value="1">
+					<label>Районные соревнования</label>
+					<input type="radio" name="radiochoice" value="2">
+					<label>Областные соревнования</label><br>
+					<input type="radio" name="radiochoice" value="3">
+					<label>Республиканские соревнования</label>
+					<input type="radio" name="radiochoice" value="4">
+					<label>Международные соревнования</label>
+					<input type="date" name="date" value="dd.mm.yyyy">
+				</fieldset>
+				<fieldset class="fieldset_2">
+					<legend>Данные регистрирующегося</legend>
+					<label>Имя:</label>
+					<input type="text" name="name_surname" placeholder="Фамилия и имя">
+					<label>Пол:</label>
+					<input type="radio" name="gender" value="m">Мужской
+					<input type="radio" name="gender" value="w">Женский
+					<label>Возрастная категория</label>
+					<select>
+						<option value="" disabled selected>-</option>
+						<option value="1">Детская (до 12 лет)</option>
+						<option value="2">Молодежная (от 12 до 18 лет)</option>
+						<option value="3">Взрослая (18+ лет)</option>
+					</select>
+				</fieldset>
+				<fieldset class="fieldset_3">
+					<legend>Выбор соревнований</legend>
+					<label class="label_text">Беговые виды</label>
+						<input type="checkbox" name="types" value="1">
+						<label>спринт</label>
+						<input type="checkbox" name="types" value="2">
+						<label>бег на средние дистанции</label>
+						<input type="checkbox" name="types" value="3">
+						<label>бег на длинные дистанции</label>
+						<input type="checkbox" name="types" value="4">
+						<label>барьерный бег</label>
+					<label class="label_text">Дистанция</label>
+						<label class="label_display">Спринт</label>
+							<input class="input_margin" type="checkbox" name="distance1" value="1">
+							<label>60 м</label>
+							<input type="checkbox" name="distance1" value="2">
+							<label>100 м</label>
+							<input type="checkbox" name="distance1" value="3">
+							<label>200 м</label>
+							<input type="checkbox" name="distance1" value="4">
+							<label>400 м</label>
+						<label class="label_display">Бег на средние дистанции</label>
+							<label class="input_margin">Список дистанций</label>
+							<input type="number" name="distance2" min="800" max="3000" step="200"> и/или
+							<input type="checkbox" name="distance2" value="1">
+							<label>3000 м с препятствиями</label>
+						<label class="label_display">Бег на длинные дистанции</label>
+							<input class="input_margin" type="checkbox" name="distance3" value="1">
+							<label>5000 м</label>
+							<input type="checkbox" name="distance3" value="2">
+							<label>10 000 м</label>
+						<label class="label_display">Барьерный бег</label>
+							<input class="input_margin" type="checkbox" name="distance4" value="1">
+							<label>60 м</label>
+							<input type="checkbox" name="distance4" value="2">
+							<label>100 м</label>
+							<input type="checkbox" name="distance4" value="3">
+							<label>110 м</label>
+							<input type="checkbox" name="distance4" value="4">
+							<label>400 м</label>
+						<label class="label_display">Эстафета</label>
+							<input class="input_margin" type="checkbox" name="distance5" value="1">
+							<label>4×100 м</label>
+							<input type="checkbox" name="distance5" value="2">
+							<label>4×200 м</label>
+							<input type="checkbox" name="distance5" value="3">
+							<label>4×400 м</label>
+							<input type="checkbox" name="distance5" value="4">
+							<label>4×800 м</label>
+							<input type="checkbox" name="distance5" value="4">
+							<label>4×1500 м</label>
+				</fieldset>
+				<fieldset class="fieldset_4">
+					<legend>Спортивные данные</legend>
+					<label>Разряд</label>
+					<input type="text" name="sports_category" placeholder="Введите разряд"><br>
+					<label>Клуб и/или организация</label>
+					<input type="text" name="club_org" placeholder="Клуб, организация"><br>
+					<label>Тренер</label>
+					<input type="text" name="coach" placeholder="Имя тренера"><br>
+					<label>Спортивный опыт</label>
+					<textarea name="exp" rows="12" cols="72"></textarea>
+					<label>Достижения</label>
+					<textarea name="exp" rows="12" cols="72"></textarea>
+				</fieldset>
+				<fieldset class="fieldset_5">
+					<legend>Подтверждения</legend>
+					<label>Согласие на обработку персональных данных</label>
+					<input type="radio" name="yes_no" value="yes">
+					<label>Да</label>
+					<input type="radio" name="yes_no" value="no">
+					<label>Нет</label><br>
+					<label>Контактные данные</label>
+					<input class="input_field" type="tel" name="telephone" placeholder="Телефон">
+					<input class="input_field" type="email" name="email" placeholder="e-mail"><br>
+					<label>Дата регистрации</label>
+					<input class="input_field" type="date" name="date">
+				</fieldset>
+
+				<input class="submit_reset margin_left" type="submit" value="Отправить">
+				<input class="submit_reset" type="reset" value="Очистить">
+			</form>
+		</main>
+		<footer>
+			<nav>
+				<ul>
+					<li><a href="index.html">Формы</a></li>
+					<li><a href="ankett.html">Анкета</a></li>
+					<li><a href="registr.html">Регистрация</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+
+<a id="bottom"></a>
+</body>
+</html>

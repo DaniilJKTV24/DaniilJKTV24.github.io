@@ -1,0 +1,211 @@
+.wrapper {
+	width: 1280px;
+	margin: 0px auto;
+	background-image: url(Images/background1.jpg);
+}
+/*-----Header-----*/
+header {
+	margin: 0px 8px 16px;
+	box-shadow: inset 4px 4px 4px rgba(154, 147, 140, 0.5), 2px 2px 2px 
+rgba(255, 255, 255, 1);
+}
+h1 {
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	color: floralwhite;
+	text-shadow: 2px 2px 2px black, -2px -2px 2px black, 4px 4px 4px lightyellow;
+}
+/*-----Header End-----*/
+/*-----Aside-----*/
+aside {
+	position: fixed;
+	top: 32px;
+	width: 1272px;
+	margin: 0px 4px;
+}
+aside a {
+	font-size: 48px;
+	color: white;
+}
+.a_left {
+	float: left;
+}
+.a_right {
+	float: right;
+}
+/*-----Aside End-----*/
+/*-----Main-----*/
+main {
+	font-family: sans-serif;
+	font-size: 24px;
+	color: ghostwhite;
+	text-shadow: 2px 2px 2px darkblue, -2px -2px 2px darkblue;
+	margin: 8px 48px;
+}
+fieldset {
+	margin-bottom: 20px;
+}
+legend {
+	border: 2px dashed black;
+	border-radius: 16px;
+	padding: 4px 12px;
+	margin-left: 24px;
+}
+.fieldset_1 {
+	border: 4px outset darkred;
+	border-top-left-radius: 16px;
+}
+.fieldset_1 [type="radio"] {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+.fieldset_1 label {
+	display: inline-block;
+	width: 500px;
+}
+.fieldset_1 [type="date"] {
+	font-size: 20px;
+	color: darkred;
+	width: 200px;
+	padding: 0px 16px;
+	margin: 16px 0px 8px;
+	border: 2px solid darkred;
+	border-radius: 16px;
+	float: right;
+}
+.fieldset_2 {
+	border: 4px outset lightgoldenrodyellow;
+	border-top-left-radius: 16px;
+}
+.fieldset_2 [type="text"] {
+	font-size: 24px;
+	width: 600px;
+	margin: 8px 32px 16px 0px;
+	border: 2px solid lightgoldenrodyellow;
+	border-radius: 16px;
+}
+.fieldset_2 [type="radio"] {
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+.fieldset_2 select {
+	font-size: 24px;
+	text-align: center;
+	width: 400px;
+	border: 2px solid lightgoldenrodyellow;
+	border-radius: 16px;
+}
+.fieldset_3 {
+	border: 4px outset darkgreen;
+	border-top-left-radius: 16px;
+}
+.fieldset_3 label {
+	display: inline-block;
+	padding: 16px 0px;
+}
+.fieldset_3 .label_text {
+	display: block;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	text-shadow: 2px 2px 2px ghostwhite, -2px -2px 2px ghostwhite;
+}
+.fieldset_3 .label_display {
+	display: block;
+	padding-left: 64px;
+	border: 4px solid transparent;
+	border-image: linear-gradient(to right, transparent 0%, lightyellow 100%) 1;
+}
+.fieldset_3 [type="checkbox"] {
+	width: 20px;
+	height: 20px;
+	margin: 0px 8px 0px 28px;
+}
+.fieldset_3 .input_margin {
+	margin-left: 160px;
+}
+.fieldset_3 [type="number"] {
+	border: 2px solid seagreen;
+	border-radius: 8px;
+	font-size: 20px;
+	width: 120px;
+	height: 28px;
+}
+.fieldset_4 {
+	border: 4px outset darkblue;
+	border-top-left-radius: 16px;
+}
+.fieldset_4 label {
+	display: inline-block;
+}
+.fieldset_4 [type="text"] {
+	border: 2px solid lightcyan;
+	border-radius: 16px;
+	font-size: 24px;
+	margin: 8px 0px 16px;
+	width: 720px;
+}
+.fieldset_4 textarea {
+	display: block;
+	font-size: 24px;
+	background-color:  #F6FAEF;
+	margin-left: 72px;
+	border: 4px double darkblue;
+	border-radius: 16px 16px 0px 16px;
+	box-shadow: 4px 4px 4px lightcyan;
+}
+.fieldset_5 {
+	border: 4px outset yellow;
+	border-top-left-radius: 16px;
+}
+.fieldset_5 [type="radio"] {
+	width: 16px;
+	height: 16px;
+}
+.input_field {
+	border: 2px solid greenyellow;
+	border-radius: 8px;
+	font-size: 24px;
+	margin: 8px;
+	width: 240px;
+}
+.fieldset_5 [type="email"] {
+	width: 520px;
+}
+.fieldset_5 [type="date"] {
+	font-size: 20px;
+	text-align: center;
+	width: 200px;
+}
+.submit_reset {
+	display: inline-block;
+	width: 240px;
+	font-size: 24px;
+	color: white;
+	background-color: darkred;
+	border: 4px groove white;
+}
+.margin_left {
+	margin-left: 350px;
+}
+/*-----Main End-----*/
+/*-----Footer-----*/
+footer {
+	margin: 8px 48px;
+	border: 2px dashed black;
+}
+footer li {
+	display: inline-block;
+	width: 360px;
+	text-align: center;
+}
+footer a {
+	font-size: 24px;
+	color: antiquewhite;
+}
+/*-----Footer End-----*/

@@ -1,0 +1,114 @@
+body {
+	background-color: lightgray;
+}
+.wrapper {
+	width: 1280px;
+	margin: 0px auto;
+	border: none;
+	background-color: lightgray;
+}
+/*-----Header-----*/
+header {
+	background-color: gray;
+	height: 400px;
+}
+img {
+	width: 480px;
+	height: auto;
+	border: 2px outset darkred;
+	position: relative;
+	left: 50px;
+	top: 25px;
+}
+h1 {
+	width: 350px;
+	height: 150px;
+	text-align: center;
+	padding-top: 50px;
+	background-color: white;
+	word-spacing: 5px;
+	position: relative;
+	left: 800px;
+	bottom: 125px;
+}
+/*-----Header End-----*/
+/*-----Aside-----*/
+aside {
+	position: fixed;
+	top: 10px;
+	width: 1272px;
+	margin: 0px 4px;
+}
+aside a {
+	font-size: 48px;
+	color: darkblue;
+}
+.a_left {
+	float: left;
+}
+.a_right {
+	float: right;
+}
+/*-----Aside End-----*/
+/*-----Main-----*/
+div {
+	border: 2px double darkred;
+	margin: 5px 0px;
+	padding: 0px 15px;
+	background-color: white;
+}
+div p, div ul {
+	margin-left: 50px;
+}
+div h2 {
+	margin-left: 15px;
+}
+.blue {
+	color: darkblue;
+}
+.red {
+	color: darkred;
+}
+.green {
+	color: green;
+}
+fieldset {
+	width: 500px;
+	margin: 25px 50px;
+	background-color: lightcyan;
+}
+select {
+	text-align: center;
+	width: 200px;
+}
+.p_padding {
+	padding-left: 50px;
+}
+.input_img {
+	width: 150px;
+	height: auto;
+}
+ol {
+	font-size: 20px;
+	font-weight: bolder;
+}
+/*-----Main End-----*/
+/*-----Footer-----*/
+footer {
+	margin: 8px 48px;
+	border: 2px dashed black;
+	background-color: white;
+}
+footer ul {
+	margin-left: 0px;
+}
+footer li {
+	display: inline-block;
+	width: 360px;
+	text-align: center;
+}
+footer a {
+	font-size: 24px;
+	color: black;
+}
+/*-----Footer End-----*/
