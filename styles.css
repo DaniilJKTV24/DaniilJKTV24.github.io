@@ -2,33 +2,50 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-
 }
 
 html{
 	font-family: 'Roboto', sans-serif;
 	font-size: 50px;
 	text-align: center;
-	color: #ffff;
-	background: #27353f;
+	color: #3d0808;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 header{
-
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 54px;
+	padding: 24px 0px;
+	background: linear-gradient(to right, #acd2ed, #6ca3cb, #3b9ade)
 }
 
 .container{
-	min-height: 800px;
-	background: url('img/me.jpg') center/cover no-repeat;
-
+	flex: 1;
+	padding-top: 16px;
+	background: url('img/AdobeStock.jpeg') center/cover no-repeat;
+	text-shadow: 2px 2px 2px #0e79a7;
+	font-size: 50px;
+	font-weight: bold;
 }
 
 .my_projects {
+	margin-top: 48px;
 	display: block;
 	left: 10px;
+	font-size: 46px;
+	font-weight: 500;
 }
 
 .my_projects a{
 	color: #39bedc;
+	text-shadow: 2px 2px 2px #3d0808;
 }
 
+footer {
+	background: linear-gradient(to left, #acd2ed, #6ca3cb, #3b9ade)
+}
