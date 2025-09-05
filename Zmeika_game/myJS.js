@@ -202,6 +202,9 @@ function haveFood(unit) {
         else if (score >= 7 && score <=10 ) {
             changeFieldColor('darkgreen');
         }
+        else if (score >= 11) {
+            changeFieldColor('darkpink');
+        }
     }
     return check;
 }
