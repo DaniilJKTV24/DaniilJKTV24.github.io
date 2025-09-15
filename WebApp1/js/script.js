@@ -100,7 +100,7 @@ window.addEventListener('DOMContentLoaded', function() {
         modal = document.querySelector('.modal');
 
     modalTrigger.forEach(btn => {
-        btn.addEventListener('click', opemModal);
+        btn.addEventListener('click', openModal);
     });
 
     function closeModal() {
@@ -128,7 +128,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    const modalTimerID = setTimeout(openModal, 300000);
+    const modalTimerId = setTimeout(openModal, 300000);
     //Changed value for it not to bother
 
     function showModalByScroll() {
@@ -137,7 +137,7 @@ window.addEventListener('DOMContentLoaded', function() {
             window.removeEventListener('scroll', showModalByScroll);
         }
     }
-    this.window.addEventListener('scroll', showModalByScroll);
+    window.addEventListener('scroll', showModalByScroll);
 
     //Use classes for making menu cards
 
@@ -175,7 +175,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 <div class="menu__item-divider"></div>
                 <div class="menu__item-price">
                     <div class="menu__item-cost">Цена</div>
-                    <div class="menu__item-total"><span>${this.price}</span> EuR/день</div>
+                    <div class="menu__item-total"><span>${this.price}</span> EUR/день</div>
                 </div>
             `;
             this.parent.append(element);
@@ -273,7 +273,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 <div class="modal__title">${message}</div>
             </div>
         `;
-        document.querySelector('modal').append(thanksModal);
+        document.querySelector('.modal').append(thanksModal);
         setTimeout(() => {
             thanksModal.remove();
             prevModalDialog.classList.add('show');
