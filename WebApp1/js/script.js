@@ -1,11 +1,11 @@
-import tabs from '.modules/tabs';
-import modal from '.modules/modal';
-import timer from '.modules/timer';
-import cards from '.modules/cards';
-import calc from '.modules/calc';
-import forms from '.modules/forms';
-import slider from '.modules/slider';
-import {openModal} from '.modules/modal';
+import tabs from './modules/tabs';
+import modal from './modules/modal';
+import timer from './modules/timer';
+import cards from './modules/cards';
+import calc from './modules/calc';
+import forms from './modules/forms';
+import slider from './modules/slider';
+import {openModal} from './modules/modal';
 
 window.addEventListener('DOMContentLoaded', function() {
     const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 50000);
@@ -29,4 +29,4 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 //npm i, npx json-server --watch db.json
-//npm wepack, npm run build
+//npx wepack, npm run build
