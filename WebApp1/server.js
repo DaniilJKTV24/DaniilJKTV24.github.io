@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 //MongoDB Connection
-const mongoURI = '';
+const mongoURI = 'mongodb+srv://DaniilAdmin:<db_password>@cluster0.6rqjhtx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 mongoose.connect(mongoURI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
