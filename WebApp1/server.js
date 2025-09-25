@@ -13,6 +13,7 @@ const port = 3001;
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname)));
+// app.use(express.static(__dirname));
 
 app.use(session({
     secret: 'secret-key',
@@ -28,7 +29,7 @@ const adminUser = {
 };
 
 //MongoDB Connection
-const mongoURI = 'mongodb+srv://DaniilAdmin:<password>@cluster0.6rqjhtx.mongodb.net/db?retryWrites=true&w=majority&appName=Cluster0'; //76dCvfz3eCAj7wVDKq
+const mongoURI = 'mongodb+srv://DaniilAdmin:6dCvfz3eCAj7wVDK@cluster0.6rqjhtx.mongodb.net/db?retryWrites=true&w=majority&appName=Cluster0'; //76dCvfz3eCAj7wVDKq
 mongoose.connect(mongoURI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
@@ -105,7 +106,7 @@ app.get('/session-status', (req, res) => {
 });
 
 //Admin panel route
-app.get('/admin', isAuthenticated, (req, rea) => {
+app.get('/admin', isAuthenticated, (req, res) => {
     res.sendFile(path.join(__dirname, 'admin/admin.html'));
 });
 
@@ -153,7 +154,7 @@ app.put('/menu/:id', isAuthenticated, async (req, res) => {
     try {
         const { id } = req.params;
         const updatedItem = await MenuItem.findByIdAndUpdate(id, req.body, { new: true });
-        res.status(200),json(updatedItem);
+        res.status(200).json(updatedItem);
     } catch (error) {
         res.status(400).json({ message: error.message });
     }
