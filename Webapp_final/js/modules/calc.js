@@ -1,13 +1,13 @@
 function calc() {
     const result = document.querySelector('.calculating__result span');
 
-    let sex, height, weight, age, ratio;
+    let pref, height, weight, age, ratio;
 
-    if (localStorage.getItem('sex')) {
-        sex = localStorage.getItem('sex');
+    if (localStorage.getItem('pref')) {
+        pref = localStorage.getItem('pref');
     }else{
-        sex = 'female';
-        localStorage.setItem('sex', 'female');
+        pref = 'casual';
+        localStorage.setItem('pref', 'casual');
     }
 
     if (localStorage.getItem('ratio')) {
@@ -18,14 +18,14 @@ function calc() {
     }
 
     function calcTotal() {
-        if (!sex || !height || !weight || !age || !ratio) {
+        if (!pref || !height || !weight || !age || !ratio) {
             result.textContent = '____';
             return;
         }
-        if (sex === 'female') {
-            result.textContent = Math.round((447.6 + (9.2 * weight) + (3.1 * height) - (4.3 * age)) * ratio);
+        if (pref === 'casual') {
+            result.textContent = Math.round((100 + (5.5 * weight) + (3 * height) - (2 * age)) * ratio);
         }else{
-            result.textContent = Math.round((88.36 + (13.4 * weight) + (4.8 * height) - (5.7 * age)) * ratio);
+            result.textContent = Math.round((300 + (10 * weight) + (3.5 * height) - (1.5 * age)) * ratio);
         }
     }
 
@@ -36,7 +36,7 @@ function calc() {
 
         elements.forEach(elem => {
             elem.classList.remove(activeClass);
-            if (elem.getAttribute('id') === localStorage.getItem('sex')) {
+            if (elem.getAttribute('id') === localStorage.getItem('pref')) {
                 elem.classList.add(activeClass);
             }
             if (elem.getAttribute('data-ratio') === localStorage.getItem('ratio')) {
@@ -45,7 +45,7 @@ function calc() {
         });
     }
 
-    initLocalSettings('#gender div', 'calculating__choose-item_active');
+    initLocalSettings('#preference div', 'calculating__choose-item_active');
     initLocalSettings('.calculating__choose_big div', 'calculating__choose-item_active');
 
     function getStaticInformation(selector, activeClass) {
@@ -57,8 +57,8 @@ function calc() {
                     ratio = +e.target.getAttribute('data-ratio');
                     localStorage.setItem('ratio', +e.target.getAttribute('data-ratio'));
                 }else{
-                    sex = e.target.getAttribute('id');
-                    localStorage.setItem('sex', e.target.getAttribute('id'));
+                    pref = e.target.getAttribute('id');
+                    localStorage.setItem('pref', e.target.getAttribute('id'));
                 }
 
                 elements.forEach(elem => {
@@ -72,7 +72,7 @@ function calc() {
         });
     }
 
-    getStaticInformation('#gender div', 'calculating__choose-item_active');
+    getStaticInformation('#preference div', 'calculating__choose-item_active');
     getStaticInformation('.calculating__choose_big div', 'calculating__choose-item_active');
 
     function getDynamicInformation(selector) {
