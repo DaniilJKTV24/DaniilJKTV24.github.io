@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
 
                     if (response.ok) {
-                        alert('Menu item deleted successfully?');
+                        alert('Menu item deleted successfully!');
                         fetchMenuItems();
                     } else {
                         alert('Failed to delete menu item. Please try again.');

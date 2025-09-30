@@ -6,6 +6,8 @@ const fs = require('fs');
 const session = require('express-session');
 const path = require('path');
 
+const config = require('./config');
+
 const app = express();
 const port = 3001;
 
@@ -29,8 +31,7 @@ const adminUser = {
 };
 
 //MongoDB Connection
-const mongoURI = 'mongodb+srv://DaniilAdmin:6dCvfz3eCAj7wVDK@cluster0.6rqjhtx.mongodb.net/db?retryWrites=true&w=majority&appName=Cluster0'; //76dCvfz3eCAj7wVDKq
-mongoose.connect(mongoURI)
+mongoose.connect(config.mongoURI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
 
