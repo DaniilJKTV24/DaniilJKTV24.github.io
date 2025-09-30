@@ -1,0 +1,28 @@
+{
+  "menu": [
+    {
+      "img": "img/tabs/road.jpg",
+      "altimg": "road",
+      "title": "Road Bicycle",
+      "descr": "The road bike is designed to take you far and fast. A road bike with a design that has not changed over time, but with improved technology, offers driving pleasure on long and smooth roads.",
+      "price": 200
+    },
+    {
+      "img": "img/tabs/gravel.jpg",
+      "altimg": "gravel",
+      "title": "Gravel Bicycle",
+      "descr": "With a gravel and cyclocross bike, you can do a fast ride on the road, and when the monotony gets boring, you can veer off the road and have fun on more adventurous terrain.",
+      "price": 250
+    },
+    {
+      "img": "img/tabs/touring.jpg",
+      "altimg": "touring",
+      "title": "Touring Bicycle",
+      "descr": "The best touring bikes will enable you to cover the miles in comfort and fully laden. It makes the perfect vehicle for escaping modern life, allowing you to take to the back roads for slow-paced exploring.",
+      "price": 150
+    }
+  ],
+  "requests": [
+
+  ]
+}
