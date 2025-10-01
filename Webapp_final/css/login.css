@@ -7,14 +7,16 @@ body {
 }
 
 .login-container {
+    color: rgb(5, 30, 112);
     background-color: #fff;
     padding: 40px;
-    border-radius: 8px;
+    border-radius: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
 }
 
 h1 {
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     margin-bottom: 20px;
 }

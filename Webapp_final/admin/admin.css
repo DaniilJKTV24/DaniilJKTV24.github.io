@@ -10,15 +10,20 @@ body {
 
 .form-container {
     flex: 1;
-    background: #fff;
+    background: #e4dcdc;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-self: flex-start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+    /* text-align: center; */
 }
 
 .items-container {
     flex: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkred;
 }
 
 #add-menu-item-form .form-group {
@@ -63,4 +68,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+#logout-btn {
+    margin-top: 8px;
 }

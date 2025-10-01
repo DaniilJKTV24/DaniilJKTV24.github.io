@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
                 <div class="menu__item-actions">
-                    <button class="btn btn-primary btn-sm edit-btn" data-id="${item._id}">Редактировать</button>
+                    <button class="btn btn-primary btn-sm edit-btn" data-id="${item._id}">Update</button>
                     <button class="btn btn-danger btn-sm delete-btn" data-id="${item._id}">Delete</button>
                 </div>
             `;

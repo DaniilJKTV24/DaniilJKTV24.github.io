@@ -19,13 +19,13 @@ function calc() {
 
     function calcTotal() {
         if (!pref || !height || !weight || !age || !ratio) {
-            result.textContent = '____';
+            result.textContent = '___';
             return;
         }
         if (pref === 'casual') {
-            result.textContent = Math.round((100 + (5.5 * weight) + (3 * height) - (2 * age)) * ratio);
+            result.textContent = Math.round(((100 + (5.5 * weight) + (3 * height) - (2 * age)) * ratio) / 10);
         }else{
-            result.textContent = Math.round((300 + (10 * weight) + (3.5 * height) - (1.5 * age)) * ratio);
+            result.textContent = Math.round(((300 + (10 * weight) + (3.5 * height) - (1.5 * age)) * ratio) / 10);
         }
     }
 
